@@ -1,6 +1,6 @@
 export ZSH="~/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 plugins=(
   osx git npm vscode z yarn
@@ -14,3 +14,6 @@ alias push="git push"
 alias gs="git status"
 alias cob="git checkout -b"
 alias commit="git commit -m"
+
+autoload -U promptinit; promptinit
+prompt spaceship
